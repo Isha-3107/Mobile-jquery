@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mobile Jquery</title>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+  
+<body>
+    <center>
+        <div data-role="page">
+            <h1 style="color:#6060a3;">PORTAL</h1>
+            <h3>INFORMATION</h3>
+            <div data-role="header" id="GFG">
+                <div role="main" class="ui-content">
+                    <table data-role="table">
+                        <thead>
+                            <tr>
+                                <th>College</th>
+                                <th>Department</th>
+                                <th>Domain</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>KKWIEER</td>
+                                <td>Information Technology</td>
+                                <td><a href="https://kkwagh.edu.in/engineering/department/department-of-information-technology" data-rel="external">Department of Information Technology</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <input type="button" id="Button" value="Button">
+            <div id="log">The text</div>
+        </div>
+    </center>
+
+    <script>
+        // Wait for the document to be fully loaded
+        $(document).ready(function () {
+            
+            // Hide the log div element initially
+            $("#log").hide();
+            
+            // Set up click event handler for the button
+            $("#Button").on('click', function () {
+                
+                // Toggle the visibility of the log div
+                $("#log").toggle();
+            });
+        });
+    </script>
+</body>
+</html>
